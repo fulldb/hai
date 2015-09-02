@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+	<RelativeLayout 
+	    android:id="@+id/img_layout"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="0dip"
+	    >
+	    	<LinearLayout
+	    	  android:id="@+id/imageViewBg"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:padding="2dp"
+		    	>
+		    </LinearLayout>
+			    <ImageView
+			        android:id="@+id/file_icon"
+			        android:layout_width="48dip"
+			        android:layout_height="48dip"
+			        android:scaleType="centerCrop"
+			        android:layout_marginLeft="8dp"
+	    	   	/>
+		    <CheckBox 
+		        android:id="@+id/checkbox"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@id/file_icon"
+		        android:layout_alignBottom="@id/file_icon" 
+		        android:visibility="gone"
+		        />
+	</RelativeLayout>
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_height="wrap_content"
+        android:layout_width="100dip"
+        android:text="图片名称"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/img_layout"
+        android:layout_marginLeft="10dip"
+    />
+</RelativeLayout>
